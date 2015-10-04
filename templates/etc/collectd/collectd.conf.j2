@@ -142,7 +142,7 @@ LoadPlugin processes
 #<LoadPlugin python>
 #	Globals true
 #</LoadPlugin>
-{% if enable_mysql_monitoring %}
+{% if collectd_enable_mysql_monitoring %}
 <LoadPlugin python>
        Globals true
 </LoadPlugin>
@@ -819,7 +819,7 @@ LoadPlugin write_graphite
 #		spam "wonderful" "lovely"
 #	</Module>
 #</Plugin>
-{% if enable_mysql_monitoring %}
+{% if collectd_enable_mysql_monitoring %}
 <Plugin python>
     ModulePath "/var/lib/collectd/modules/python"
 </Plugin>
