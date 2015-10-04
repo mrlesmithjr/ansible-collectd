@@ -1128,12 +1128,12 @@ LoadPlugin write_graphite
   IgnoreSelected false
 </Plugin>
 <Plugin write_graphite>
-       <Node "{{graphite_node}}">
-               Host "{{graphite_host}}"
-               Port "{{graphite_port}}"
-               Protocol "{{graphite_protocol}}"
+       <Node "{{ graphite_host }}">
+               Host "{{ graphite_host_fqdn }}"
+               Port "{{ graphite_port }}"
+               Protocol "{{ graphite_protocol }}"
                LogSendErrors true
-               Prefix "{{graphite_prefix}}"
+               Prefix "{{ graphite_prefix }}"
                StoreRates true
                AlwaysAppendDS false
                EscapeCharacter "_"
