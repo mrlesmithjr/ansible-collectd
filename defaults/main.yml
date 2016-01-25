@@ -11,3 +11,4 @@ graphite_host_fqdn: '{{ graphite_host }}.{{ pri_domain_name }}'  #define here or
 graphite_port: 2003
 graphite_protocol: tcp
 graphite_prefix: collectd.
+pri_domain_name: example.org
